@@ -1,0 +1,134 @@
+.header
+  &__wrapper
+  &__logo
+    position: relative
+    margin-top: 20px
+    z-index: 20
+    & a 
+      font-family: 'UTLaurelle-Bold'
+      font-size: 50px
+      line-height: 50px
+      vertical-align: bottom
+      color: $white
+  &__inner 
+    max-width: 1050px 
+    width: 100%
+    position: fixed
+    display: flex
+    justify-content: space-between
+    z-index: 20
+  &__menu 
+    display: flex
+    align-items: center
+    list-style: none
+  &__list
+    &-blue, &-red, &-violet, &-green, &-dark-blue 
+      margin-right: 30px
+      padding: 33px 15px 15px 18px
+      &:last-child
+        margin-right: 0px  
+      & a
+        position: relative
+        font-family: 'Galatea-Regular'
+        font-size: 18px
+        color: $white 
+        transition: all .3s ease 
+        z-index: 30
+        &:hover
+          color: #f5c149
+          transition: all .3s ease
+    &-blue
+      transition: all .3s ease
+      &.active
+        background-color: #74c7d5
+        border-radius: 0px 0px 10px 10px 
+        transition: all .3s ease        
+    &-red
+      transition: all .3s ease
+      &.active
+        background-color: #df5c64
+        border-radius: 0px 0px 10px 10px 
+        transition: all .3s ease
+    &-violet 
+      transition: all .3s ease
+      &.active 
+        background-color: #91778e 
+        border-radius: 0px 0px 10px 10px
+        transition: all .3s ease
+    &-green
+      transition: all .3s ease 
+      &.active
+        background-color: #a1ca6c
+        border-radius: 0px 0px 10px 10px
+        transition: all .3s ease         
+    &-dark-blue
+      transition: all .3s ease
+      &.active
+        background-color: #82c8bd 
+        border-radius: 0px 0px 10px 10px    
+        transition: all .3s ease 
+.burger
+  &__menu
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    top: 33px
+    right: 15px
+    height: 25px
+    z-index: 20
+  &__line 
+    display: block
+    width: 40px
+    height: 3px
+    background-color: #fff
+
+
+
+@media (max-width: 1120px) 
+  .header
+    &__logo        
+      & a 
+        margin-left: 15px
+
+@media (max-width: 920px) 
+  .header
+    &__logo        
+      & a 
+        font-size: 40px
+        margin-left: 18px      
+    &__menu li a 
+      font-size: 15px          
+
+@media (max-width: 768px) 
+  .burger
+    &__menu 
+      display: flex 
+  .header
+    &__inner
+      display: block
+      &.active
+        z-index: 21
+    &__menu
+      margin-top: 80px
+      flex-direction: column
+      align-items: center
+      &-wrapper
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: url("../img/intro/menu-bcg.jpg") center center/cover no-repeat
+        overflow-y: scroll
+        animation-name: burger
+        animation-duration: .5s
+        &.active 
+          display: block
+    &__list
+      &-blue, &-red, &-violet, &-green, &-dark-blue 
+        margin: 15px
+        padding: 10px    
+        &.active
+          border-radius: 5px

@@ -1,0 +1,141 @@
+.contact 
+  height: 100vh
+  background: url("../img/contact/bcg.jpg") center center/cover no-repeat
+  &__heading 
+    padding-top: 220px 
+  &__wrapper 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__inner 
+    display: flex
+    justify-content: space-between  
+  &__box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__address 
+    padding: 0px 10px  
+  &__title 
+    font-family: "Galatea-Light"
+    font-size: 30px
+    color: #fff   
+    margin-bottom: 20px
+  &__subtitle 
+    font-family: "Galatea-Regular"
+    font-size: 20px
+    color: #c0dfda  
+    margin-bottom: 5px
+  &__location
+    font-family: "Galatea-Light"
+    font-size: 16px
+    color: #fff
+    margin-bottom: 80px
+  &__contacts 
+    display: flex
+    margin-right: 40px  
+  &__positions 
+    font-family: "Galatea-Regular"
+    font-size: 16px
+    color: #c0dfda
+    margin-right: 15px
+  &__map-img
+    border-radius: 5px  
+  &__numbers 
+    font-family: "Galatea-Light"
+    font-size: 16px
+    color: #fff
+  &__callback 
+    max-width: 540px
+    width: 100%  
+    padding: 0px 10px
+  &__fields-sm 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+  &__field-sm 
+    max-width: 250px
+    width: 100%
+    height: 40px
+    border-radius: 5px
+    border: none 
+    font-family: "Galatea-Regular"
+    font-size: 16px
+    color: #80c5ba
+    background-color: #68a097  
+    outline: none 
+    padding-left: 20px
+    transition: all .3s ease
+    &:focus
+      background-color: #fff
+      color: #000
+      transition: all .3s ease
+  &__field-bg
+    max-width: 540px
+    width: 100%
+    height: 160px    
+    background-color: #68a097  
+    outline: none 
+    border-radius: 5px
+    border: none 
+    font-family: "Galatea-Regular"
+    font-size: 16px
+    color: #80c5ba
+    padding: 10px 0px 0px 20px
+    margin-bottom: 30px
+    transition: all .3s ease
+    &:focus
+      background-color: #fff
+      color: #000
+      transition: all .3s ease
+  &__button
+    display: block
+    width: 260px
+    height: 50px
+    font-family: "Galatea-Bold"
+    font-size: 26px
+    text-transform: uppercase
+    color: #fff
+    background-color: #df5c64
+    border: none
+    outline: none
+    border-radius: 5px
+    border-bottom: 5px solid #c8535a
+    margin: 0 auto
+    cursor: pointer
+    transition: all .3s ease
+    &:hover 
+      filter: saturate(120%)
+      transition: all .3s ease
+.callback__title 
+  margin-bottom: 25px
+
+@media (max-height: 1080px) 
+  .contact
+    height: auto
+    padding-bottom: 100px
+
+@media (max-width: 1052px)    
+  .contact 
+    &__wrapper
+      justify-content: center
+    &__address 
+      margin-bottom: 50px  
+
+@media (max-width: 540px)      
+  .contact 
+    &__box 
+      justify-content: center  
+    &__title 
+      text-align: center
+    &__info 
+      margin-bottom: 25px 
+    &__fields-sm
+      display: block   
+    &__field-sm 
+      max-width: 540px
+      margin-top: 20px
+
+  
+      

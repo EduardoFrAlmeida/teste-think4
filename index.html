@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acnostia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Menu-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="index.html">acnostia</a>
+        </div>
+        <div class="burger__menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <ul class="header__menu">
+            <li class="header__list-blue active">
+              <a href="#home">Home</a>
+            </li>
+            <li class="header__list-red">
+              <a href="#services">Services</a>
+            </li>
+            <li class="header__list-dark-blue">
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--/Menu-->
+
+  <!--Carrossel-->
+  <section id="home" class="intro">
+
+    <div class="intro__wrapper">
+      <div id="intro-arrow-prev" class="intro__arrow-prev" onclick="nextIndex(-1)"></div>
+      <div id="intro-arrow-next" class="intro__arrow-next" onclick="nextIndex(1)"></div>
+
+      <div id="intro-slider" class="intro__slider">
+        <div class="intro__item-inner">
+          <img src="img/intro/bg-1.jpg" alt="#" class="intro__image fade">
+
+          <div class="intro__item">
+            <div class="intro__box init active">
+              <div class="intro__box-inner">
+                <div class="intro__text">
+                  <div class="intro__text-regular">good ideas<br> <span>comes</span></div>
+                  <div class="intro__text-bold">first!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro__item">
+            <div class="intro__box init">
+              <div class="intro__box-inner">
+                <div class="intro__text">
+                  <div class="intro__text-regular dark-blue">first good <br> <span>comes</span></div>
+                  <div class="intro__text-bold dark-blue">ideas!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro__item">
+            <div class="intro__box init">
+              <div class="intro__box-inner">
+                <div class="intro__text">
+                  <div class="intro__text-regular red">first ideas<br> <span>comes</span></div>
+                  <div class="intro__text-bold red">good!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro__dots">
+        <span class="intro__dot active" onclick="changeIndex(0)"></span>
+        <span class="intro__dot" onclick="changeIndex(1)"></span>
+        <span class="intro__dot" onclick="changeIndex(2)"></span>
+      </div>
+    </div>
+  <!--Carrossel-->
+
+  </section>
+  <!--/Carrossel-->
+  
+  <!--services-->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="block__heading">
+        <div class="block__title">
+          Our Services
+        </div>
+        <div class="block__subtitle">
+          Cras commodo mattis justo nec lobortis. Nam ut tellus <span>lobortis</span>, ullamcorper massa sit amet
+        </div>
+        <div class="block__text">
+          Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
+          rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae
+          justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+        </div>
+      </div>
+
+      <div class="services__wrapper">
+        <div class="services__items">
+
+          <div class="services__item">
+            <div class="services__circle-stroke">
+              <div class="services__circle-fill">
+                <div class="services__item-icon">
+                  <img src="../img/services/lamp.png" alt="lamp">
+                </div>
+              </div>
+            </div>
+            <div class="services__item-title">
+              Researching
+            </div>
+            <div class="services__item-text">
+              Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore.
+            </div>
+          </div>
+
+          <div class="services__item">
+            <div class="services__circle-stroke">
+              <div class="services__circle-fill">
+                <div class="services__item-icon">
+                  <img src="../img/services/wand.png" alt="wand">
+                </div>
+              </div>
+            </div>
+            <div class="services__item-title">
+              Design
+            </div>
+            <div class="services__item-text">
+              Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore.
+            </div>
+          </div>
+
+          <div class="services__item">
+            <div class="services__circle-stroke">
+              <div class="services__circle-fill">
+                <div class="services__item-icon">
+                  <img src="../img/services/gears.png" alt="lamp">
+                </div>
+              </div>
+            </div>
+            <div class="services__item-title">
+              Development
+            </div>
+            <div class="services__item-text">
+              Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore.
+            </div>
+          </div>
+
+          <div class="services__item">
+            <div class="services__circle-stroke">
+              <div class="services__circle-fill">
+                <div class="services__item-icon">
+                  <img src="../img/services/rocket.png" alt="lamp">
+                </div>
+              </div>
+            </div>
+            <div class="services__item-title">
+              Launch
+            </div>
+            <div class="services__item-text">
+              Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/services-->
+
+  <!--contact-->
+  <section id="contacts" class="contact">
+    <div class="container">
+      <div class="block__heading">
+        <div class="block__title">
+          Contact Us
+        </div>
+        <div class="block__text portfolio-text">
+          Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat
+          rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae
+          justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+        </div>
+      </div>
+
+      <div class="contact__wrapper">
+        <div class="contact__address">
+          <div class="contact__title">
+            Address
+          </div>
+          <div class="contact__box">
+            <div class="contact__info">
+              <div class="contact__subtitle">
+                Acrostia
+              </div>
+              <div class="contact__location">
+                Sevenoaks Rd<br>
+                Sevenoaks TN14 7HR, UK
+              </div>
+
+              <div class="contact__contacts">
+                <div class="contact__positions">
+                  Phone:<br>
+                  Fax:<br>
+                  E-Mail:<br>
+                  Skype:<br>
+                </div>
+                <div class="contact__numbers">
+                  +44 445 555 555<br>
+                  +44 446 565 455<br>
+                  info@acrostia.com<br>
+                  Ac0stia<br>
+                </div>
+              </div>
+            </div>
+            <div class="contact__map">
+              <img src="img/contact/map.jpg" alt="map" class="contact__map-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__callback">
+          <div class="contact__title callback__title">
+            Ask a question
+          </div>
+          <div class="contact__form-wrapper">
+            <form class="contact__form" action="#" method="POST">
+              <div class="contact__fields-sm">
+                <input class="contact__field-sm" type="text" name="user-name" id="user-name" placeholder="Name">
+                <input class="contact__field-sm" type="email" name="user-mail" id="user-mail" placeholder="E-Mail">
+              </div>
+              <textarea class="contact__field-bg" name="question" id="question" placeholder="Your Question"></textarea>
+              <button class="contact__button">send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/contact-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
